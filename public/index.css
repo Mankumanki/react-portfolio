@@ -1,0 +1,120 @@
+body {
+    background: white;
+}
+
+.hamburger-react {
+    border-radius: 50%;
+    box-shadow: 0 0 20px #bbbbbb;
+    margin-left: 40px;
+}
+
+.hamburger-react:hover {
+    transform: scale(1.2);
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0;
+    animation: header-anim 2.0s;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.navbar-toggler-icon {
+    width: 1.5em;
+    height: 2.0em;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+#profile {
+    width: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #a6a6a6;
+    transition: all 0.2s ease-in;
+}
+
+#profile:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
+}
+
+.Tool-tipHide {
+    display: none;
+
+}
+
+.Tool-tipShow {
+    background-color: rgb(35, 35, 35);
+    color: white;
+    z-index: 1;
+    position: absolute;
+    transform: translateX(70px);
+    display: inline;
+    animation: tooltipAnim 1s;
+    border-radius: 0.5em;
+}
+
+.social-sites:hover {
+    animation: socialSitesAnim 1.5s;
+}
+
+#linked-in:hover svg {
+    fill: #0077B5;
+}
+
+#github:hover svg {
+    fill: #6E5494;
+}
+
+@keyframes socialSitesAnim {
+    0% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        transform: rotateZ(1.0);
+    }
+
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+@keyframes tooltipAnim {
+    0% {
+        transform: translateX(55px);
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateX(70px);
+        opacity: 1;
+    }
+}
+
+@keyframes header-anim {
+    from {
+        opacity: 0;
+        top: -100px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 930px;
+    }
+}

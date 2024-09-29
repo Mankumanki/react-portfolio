@@ -1,0 +1,184 @@
+.text-body-emphasis {
+    font-family: "Inter", sans-serif;
+    font-size: 55px;
+    background: linear-gradient(135deg, rgb(206, 206, 206)10%, rgb(67, 67, 67) 60%, rgb(206, 206, 206));
+    background-size: 200% auto;
+    background-clip: text;
+    color: transparent !important;
+    animation: gradient-flow 5s infinite alternate;
+}
+
+#location {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 90px;
+    left: 0px;
+    top: 0%;
+    background-color: rgba(36, 36, 36, 0.95);
+    border-radius: 0 150px 150px 0;
+    animation: location-anim 1.5s ease-in-out;
+}
+
+.globeChanges {
+    position: relative;
+    z-index: 2;
+    top: 15px;
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid rgb(46, 46, 46);
+    animation: typing 3s steps(15), cursorBlink 0.5s infinite;
+}
+
+.animatePara {
+    animation: paraAnim 2.0s ease-in-out;
+}
+
+.bgImage {
+    animation: bgImageAnim 2.0s ease-in;
+}
+
+@keyframes bgImageAnim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes paraAnim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes cursorBlink {
+    from {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes gradient-flow {
+    from {
+        background-position: 100%;
+    }
+
+    to {
+        background-position: 0%;
+        border: none
+    }
+}
+
+@keyframes location-anim {
+    from {
+        opacity: 0;
+        left: -100px
+    }
+
+    to {
+        opacity: 1;
+        left: 0px
+    }
+}
+
+@media (max-width: 998px)AND (min-width:768px) {
+    .bgImage {
+        background-position-x: -260px !important;
+        background-size: 95% 95% !important;
+    }
+
+    #intro {
+        left: 23% !important;
+    }
+
+    #para {
+        left: 23% !important;
+    }
+
+    .text-body-emphasis {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width:768px) AND (min-width:664px) {
+    .bgImage {
+        background-position-x: -220px !important;
+        background-size: 100% 100% !important;
+    }
+
+    #intro {
+        left: 24% !important;
+    }
+
+    #para {
+        left: 24% !important;
+    }
+
+    .text-body-emphasis {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 12px !important;
+    }
+
+    #location {
+        visibility: hidden;
+    }
+}
+
+@media (max-width:664px) {
+    .bgImage {
+        background-position-x: -210px !important;
+    }
+
+    #intro {
+        left: 21% !important;
+    }
+
+    #para {
+        left: 21% !important;
+    }
+
+    .text-body-emphasis {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 11px !important;
+    }
+
+    #location {
+        visibility: hidden;
+    }
+}
+
+@media screen AND (max-width:1024px) {
+    .bgImage {
+        margin-top: 20rem !important;
+    }
+}

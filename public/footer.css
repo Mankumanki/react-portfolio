@@ -1,0 +1,22 @@
+footer {
+    font-family: "Poppins", sans-serif;
+}
+
+.btnStyle {
+    transition: all 0.3s ease-in;
+    background-color: transparent;
+    color: rgb(85, 85, 85);
+    border-radius: 2rem;
+    border: none;
+    transform: scale(0.9);
+    box-shadow: inset 0em 0em 0em 0em rgb(114, 114, 114);
+    border: 2px solid rgb(222, 219, 235);
+}
+
+.btnStyle:hover {
+    border: none;
+    color: white;
+    transform: scale(1.0);
+    background-color: rgb(114, 114, 114);
+    box-shadow: inset 5em 0em 0em 0em rgb(114, 114, 114);
+}

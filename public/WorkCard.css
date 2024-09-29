@@ -1,0 +1,28 @@
+h2 {
+    background: linear-gradient(135deg, rgb(159, 159, 159) 1%, rgb(0, 0, 0) 40%);
+    background-clip: text;
+    color: transparent;
+}
+
+.boxDesign {
+    width: 50%;
+    border-radius: 1.5em;
+    background-color: #eceff1;
+    transition: all 0.3s ease-in;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.boxDesign:hover {
+    border-radius: 2em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1rem 3rem rgb(214, 214, 214);
+    transform: scale(1.05);
+    font-family: "Poppins", sans-serif;
+}
+
+@media screen AND (max-width:1024px) {
+    .boxDesign {
+        width: 80%;
+    }
+}
