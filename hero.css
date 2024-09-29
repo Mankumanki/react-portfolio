@@ -1,7 +1,7 @@
 .text-body-emphasis {
     font-family: "Inter", sans-serif;
     font-size: 55px;
-    background: linear-gradient(135deg, rgb(206, 206, 206)10%, rgb(67, 67, 67) 60%, rgb(206, 206, 206));
+    background: linear-gradient(135deg, rgb(206, 206, 206) 10%, rgb(67, 67, 67) 60%, rgb(206, 206, 206));
     background-size: 200% auto;
     background-clip: text;
     color: transparent !important;
